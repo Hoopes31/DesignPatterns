@@ -12,12 +12,12 @@ namespace Decorator
         {
             // Explicit declaration is required here
             Truck monsterTruck = new MonsterTruck();
-            Console.WriteLine(monsterTruck.Description);
-            Console.WriteLine(monsterTruck.Price);
+            Console.WriteLine(monsterTruck.GetDescription());
+            Console.WriteLine(monsterTruck.GetPrice());
 
             monsterTruck = new BiggerWheels(monsterTruck);
-            Console.WriteLine(monsterTruck.Description);
-            Console.WriteLine(monsterTruck.Price);
+            Console.WriteLine(monsterTruck.GetDescription());
+            Console.WriteLine(monsterTruck.GetPrice());
         }
     }
 }
