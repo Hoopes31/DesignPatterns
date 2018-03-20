@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Prototype
 {
-    public class AnimalPrototype : Cloneable
+    public class SheepPrototype : Cloneable
     {
         public int LegCount;
         public string Name;
 
-        public AnimalPrototype (int legCount, string name)
+        public SheepPrototype (int legCount, string name)
         {
             LegCount = legCount;
             Name = name;
@@ -20,7 +20,7 @@ namespace Prototype
         public override Cloneable Clone()
         {
             Console.WriteLine($"Cloning {LegCount} legged, {Name}");
-            var clone = MemberwiseClone() as AnimalPrototype;
+            var clone = MemberwiseClone() as SheepPrototype;
             clone.LegCount = UpdateLegs();
             clone.Name = clone.Name + "_2";
             return clone;

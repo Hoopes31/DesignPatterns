@@ -42,8 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cloneable.cs" />
-    <Compile Include="AnimalPrototype.cs" />
+    <Compile Include="Abstract\Cloneable.cs" />
+    <Compile Include="Concrete\SheepPrototype.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

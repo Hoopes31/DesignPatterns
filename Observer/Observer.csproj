@@ -42,10 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Concrete_Objects\ConcreteObserver.cs" />
-    <Compile Include="Concrete_Objects\ConcreteProducer.cs" />
-    <Compile Include="IObserver.cs" />
-    <Compile Include="IProducer.cs" />
+    <Compile Include="Concrete\ConcreteObserver.cs" />
+    <Compile Include="Concrete\ConcreteProducer.cs" />
+    <Compile Include="Abstract\IObserver.cs" />
+    <Compile Include="Abstract\IProducer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

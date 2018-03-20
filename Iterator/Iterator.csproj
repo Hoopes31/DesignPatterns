@@ -42,17 +42,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Items_to_iterate\IIteratorItem.cs" />
-    <Compile Include="Items_to_iterate\ArrayItem.cs" />
-    <Compile Include="Items_to_iterate\ListItem.cs" />
-    <Compile Include="Iterator\ArrayIterator.cs" />
-    <Compile Include="Iterator\IIterator.cs" />
-    <Compile Include="Iterator\ListIterator.cs" />
+    <Compile Include="Abstract\IIteratorItem.cs" />
+    <Compile Include="Concrete\Array.cs" />
+    <Compile Include="Concrete\List.cs" />
+    <Compile Include="Concrete\ArrayIterator.cs" />
+    <Compile Include="Abstract\IIterator.cs" />
+    <Compile Include="Concrete\ListIterator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Iterator\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

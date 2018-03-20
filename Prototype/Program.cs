@@ -11,17 +11,17 @@ namespace Prototype
         static void Main(string[] args)
         {
             // Save passed clones
-            var cloneFarm = new Dictionary<string, AnimalPrototype>();
+            var cloneFarm = new Dictionary<string, SheepPrototype>();
 
             // Initialize some clones
-            cloneFarm["Animal_1"] = new AnimalPrototype(4, "Betsy");
-            cloneFarm["Animal_2"] = new AnimalPrototype(5, "Penta");
-            cloneFarm["Animal_3"] = new AnimalPrototype(3, "Accidenta");
+            cloneFarm["Animal_1"] = new SheepPrototype(4, "Betsy");
+            cloneFarm["Animal_2"] = new SheepPrototype(5, "Penta");
+            cloneFarm["Animal_3"] = new SheepPrototype(3, "Accidenta");
 
             // Clone some animals!
-            AnimalPrototype betsyClone = cloneFarm["Animal_1"].Clone() as AnimalPrototype;
-            AnimalPrototype ginaClone = cloneFarm["Animal_2"].Clone() as AnimalPrototype;
-            AnimalPrototype accidentaClone = cloneFarm["Animal_3"].Clone() as AnimalPrototype;
+            SheepPrototype betsyClone = cloneFarm["Animal_1"].Clone() as SheepPrototype;
+            SheepPrototype ginaClone = cloneFarm["Animal_2"].Clone() as SheepPrototype;
+            SheepPrototype accidentaClone = cloneFarm["Animal_3"].Clone() as SheepPrototype;
 
             // Add clones to the clone farm
             cloneFarm.Add("Animal_4", betsyClone);

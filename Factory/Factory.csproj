@@ -42,9 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CarFactory.cs" />
-    <Compile Include="ICar.cs" />
-    <Compile Include="ICarFactory.cs" />
+    <Compile Include="Concrete\CarFactory.cs" />
+    <Compile Include="Abstract\ICar.cs" />
+    <Compile Include="Abstract\ICarFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

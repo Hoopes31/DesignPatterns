@@ -42,13 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoFactoryProvider.cs" />
-    <Compile Include="BMWFactory.cs" />
-    <Compile Include="Car.cs" />
-    <Compile Include="HondaFactory.cs" />
-    <Compile Include="IAutoFactory.cs" />
-    <Compile Include="IVehicle.cs" />
-    <Compile Include="Motorcycle.cs" />
+    <Compile Include="Concrete\AutoFactoryProvider.cs" />
+    <Compile Include="Concrete\BMWFactory.cs" />
+    <Compile Include="Abstract\Car.cs" />
+    <Compile Include="Concrete\HondaFactory.cs" />
+    <Compile Include="Abstract\IAutoFactory.cs" />
+    <Compile Include="Abstract\IVehicle.cs" />
+    <Compile Include="Abstract\Motorcycle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
